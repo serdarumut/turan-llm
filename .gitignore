@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editör
+.vscode/
+
+# Yerel araçlar (llama.cpp kaynak kodu ve programları)
+araclar/
+
+# Model dosyaları çok büyük (3-9 GB); sadece Modelfile depoda
+model/*
+!model/Modelfile
+*.gguf
+*.safetensors

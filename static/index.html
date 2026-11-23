@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURAN · Yerli Yapay Zekâ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="marka">
+      <span class="kurt">🐺</span>
+      <div>
+        <div class="ad">TURAN <span class="gokturk" title="Göktürk harfleriyle TURAN">𐱃𐰆𐰺𐰀𐰣</span></div>
+        <div class="alt-baslik">Yerli Yapay Zekâ Asistanı</div>
+      </div>
+    </div>
+    <div class="kontroller">
+      <select id="model" aria-label="Model seç"></select>
+      <button id="yeni" type="button">+ Yeni sohbet</button>
+      <button id="tema" type="button" aria-label="Temayı değiştir">🌙</button>
+    </div>
+  </header>
+  <div class="serit"></div>
+
+  <main id="sohbet">
+    <section id="karsilama" class="karsilama">
+      <div class="buyuk-kurt">🐺</div>
+      <h1>TURAN</h1>
+      <p>Serdar TURAN tarafından eğitilmiş, tamamen bu bilgisayarda çalışan yapay zekâ asistanı.</p>
+      <div class="ornekler">
+        <button type="button" data-soru="Sen kimsin?">Sen kimsin?</button>
+        <button type="button" data-soru="Adın neden TURAN?">Adın neden TURAN?</button>
+        <button type="button" data-soru="SSTEK şirketi ne yapar?">SSTEK şirketi ne yapar?</button>
+      </div>
+    </section>
+    <div id="mesajlar"></div>
+  </main>
+
+  <form id="form" class="yazma">
+    <textarea id="giris" rows="1" placeholder="TURAN'a bir şey sor..." autofocus></textarea>
+    <button id="gonder" type="submit">GÖNDER</button>
+  </form>
+  <p class="dipnot">Yerel olarak çalışır · İnternet bağlantısı gerekmez · Gemma 4 E2B + LoRA</p>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
